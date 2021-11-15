@@ -6,8 +6,8 @@ import Create from './pages/create/Create';
 import Search from './pages/search/Search';
 import Feature from './pages/feature/Feature';
 import NavBar from './components/NavBar';
-import ThemeSelector from './components/ThemeSelector';
 import Home from './pages/home/Home';
+import SideBar from './components/SideBar';
 
 //styles
 import './App.css'
@@ -21,7 +21,7 @@ function App() {
     <div className={`App ${mode}`}>
       <BrowserRouter>
         <NavBar />
-        <ThemeSelector />
+        <SideBar/>
         <Switch>
           <Route exact path='/'>
             <Home />
