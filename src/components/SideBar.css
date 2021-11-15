@@ -1,0 +1,12 @@
+.side-bar{
+    float: left;
+    padding: 15px;
+    color: white;
+}
+
+#theme{
+    background-color: gray;
+    border-radius: 10px;
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
+}
