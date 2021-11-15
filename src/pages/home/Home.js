@@ -2,8 +2,10 @@ import './Home.css'
 
 const Home = () => {
     return ( 
-        <div>
-            Landing Page
+        <div className="landing">
+            <div className="container">
+                <h1 className="page-title">Plan Your Next Escapade</h1>
+            </div>
         </div>
      );
 }

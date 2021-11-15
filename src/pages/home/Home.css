@@ -1,0 +1,29 @@
+.landing {
+	background-image: url('../../assets/ipanema.jpg');
+	background-color: #cccccc; /* Used if the image is unavailable */
+	height: 100vh; /* You must set a specified height */
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.container {
+	display: grid;
+	height: 100vh;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: minmax(200px, auto);
+	grid-template-areas:
+		'header 	header		header'
+		'main		main		main'
+		'footer		footer		logo';
+}
+
+.landing .page-title {
+	grid-area: main;
+	color: white;
+	font-size: 2.5cm;
+	height: 100px;
+	margin-top: 0;
+	justify-content: center;
+	align-content: center;
+}

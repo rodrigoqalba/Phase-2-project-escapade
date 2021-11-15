@@ -1,12 +1,15 @@
-.side-bar{
-    float: left;
-    padding: 15px;
-    color: white;
+.side-bar {
+	float: left;
+	padding: 15px;
+	color: white;
+	height: 100vh;
 }
 
-#theme{
-    background-color: gray;
-    border-radius: 10px;
-    padding-inline-start: 10px;
-    padding-inline-end: 10px;
+#theme {
+	background-color: lightgray;
+	border-radius: 10px;
+	padding-inline-start: 10px;
+	padding-inline-end: 10px;
+	height: 40px;
+	padding: 10px;
 }
