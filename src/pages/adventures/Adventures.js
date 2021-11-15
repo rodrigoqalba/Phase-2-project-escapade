@@ -1,5 +1,5 @@
 import { useFetch } from '../../hooks/useFetch'
-import RecipeList from '../../components/AdventureList'
+import AdventureList from '../../components/AdventureList'
 
 import "./Adventures.css"
 
@@ -11,7 +11,7 @@ const Home = () => {
         <div className="home">
             {error && <p className="error">{error}</p>}
             {isPending && <p className="loading">Loading...</p>}
-            {data && <RecipeList recipes={data}/>}
+            {data && <AdventureList recipes={data}/>}
         </div>
      );
 }
