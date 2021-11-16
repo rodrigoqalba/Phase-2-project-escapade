@@ -12,6 +12,7 @@ export default function Searchbar() {
     e.preventDefault()
 
     history.push(`/search?q=${term}`)
+    setTerm('')
   }
 
   return (

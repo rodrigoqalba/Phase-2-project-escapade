@@ -9,15 +9,15 @@ const Search = () => {
     const queryParams = new URLSearchParams(queryString)
     const query = queryParams.get('q')
 
-    const url = 'http://localhost:8000/recipes?q='+query
+    const url = 'http://localhost:8000/countries?q='+query
     const { error, isPending, data } = useFetch(url)
 
     return ( 
-        <div>
+        <div className="search">
             <h2 className="page-title">Adventures including "{query}"</h2>
             {error && <p className="error">{error}</p>}
             {isPending && <p className="loading">Loading... </p>}
-            {data && <AdventureList recipes={data}/>}
+            {data && <AdventureList adventures={data}/>}
         </div>
      );
 }

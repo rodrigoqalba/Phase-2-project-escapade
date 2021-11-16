@@ -1,11 +1,10 @@
 .landing {
-	background-image: url('../../Images/Bolivia/_DSC4047-1.jpg');
-	background-color: #cccccc; /* Used if the image is unavailable */
-	height: 80vh; /* You must set a specified height */
+	background-image: url('../../assets/bolivia.jpg');
+	background-color: #201e1d; /* Used if the image is unavailable */
+	height: 100vh; /* You must set a specified height */
 	background-position: center; /* Center the image */
 	background-repeat: no-repeat; /* Do not repeat the image */
 	background-size: cover; /* Resize the background image to cover the entire container */
-	overflow: auto;
 }
 
 .container {

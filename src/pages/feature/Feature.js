@@ -12,18 +12,17 @@ const Recipe = () => {
     const { mode } = useTheme
 
     return ( 
-        <div className={`adventure ${mode}`}>
+        <div className={`recipe ${mode}`}>
             {error && <p className="error">{error}</p>}
             {isPending && <p className="loading">Loading...</p>}
             {adventure && (
-                <div className="recipe-list">
+                <>
                     <h2 className="page-title">{adventure.location} </h2>
-                    <img src={adventure.image} style={{width: 800}}/>
+                    <img src={adventure.image} alt={adventure.location} style={{width: 800}}/>
                     <h3>{adventure.activity}</h3>
+                    <br/>
                     <p>{adventure.description}</p>
-                    <p className="method">{adventure.method}</p>
-
-                </div>
+                </>
             )}
         </div>
      );
