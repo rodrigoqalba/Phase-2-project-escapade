@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect} from "react";
+import { useState, useEffect} from "react";
 import { useHistory } from "react-router-dom";
 import { useFetch } from "../../hooks/useFetch";
 
@@ -6,20 +6,25 @@ import "./Create.css"
 
 const Create = () => {
 
+    const [country, setCountry] = useState('')
+    const [location, setLocation] = useState('')
     const [image, setImage] = useState('')
-    const [locations, setLocations] = useState('')
+    const [activity, setActivity] = useState('')
     const [description, setDescription] = useState('')
-    
+    const history = useHistory()
 
+    const { postData, data, error } = useFetch('http://localhost:8000/countries', 'POST')
     
-
-    const handleSubmit = () => {
-        console.log('hi');
-    //     e.preventDefault()
-    //     postData({ title, locations, description})
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        postData({ country, location, image, activity, description })
     }
 
-    
+    useEffect(() => {
+        if (data) {
+            history.push('/adventures')
+        }
+    }, [data])
     
 
     return ( 
@@ -27,22 +32,36 @@ const Create = () => {
             <h2 className="page-title">Add a New Adventure</h2>
 
             <form onSubmit={handleSubmit}>
-
+                <label>
+                    <span>Country: </span>
+                    <input
+                    onChange={(e) => setCountry(e.target.value)}
+                    value={country}
+                    required
+                    />
+                </label>
+                <label>
+                    <span>Location: </span>
+                    <input
+                    onChange={(e) => setLocation(e.target.value)}
+                    value={location}
+                    required
+                    />
+                </label>
                 <label>
                     <span>Image:</span>
                     <input 
-                    type="text"
+                    type="url"
                     onChange={(e)=> setImage(e.target.value)}
                     value={image}
                     required 
                     />
                 </label>
-
                 <label>
-                    <span>Location: </span>
-                    <input
-                    onChange={(e) => setLocations(e.target.value)}
-                    value={locations}
+                    <span>Activity: </span>
+                    <textarea
+                    onChange={(e) => setActivity(e.target.value)}
+                    value={activity}
                     required
                     />
                 </label>
