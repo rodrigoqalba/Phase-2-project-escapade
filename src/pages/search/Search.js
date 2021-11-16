@@ -1,5 +1,5 @@
 import { useLocation } from "react-router";
-import RecipeList from "../../components/AdventureList";
+import AdventureList from "../../components/AdventureList";
 import { useFetch } from "../../hooks/useFetch";
 import "./Search.css"
 
@@ -17,7 +17,7 @@ const Search = () => {
             <h2 className="page-title">Adventures including "{query}"</h2>
             {error && <p className="error">{error}</p>}
             {isPending && <p className="loading">Loading... </p>}
-            {data && <RecipeList recipes={data}/>}
+            {data && <AdventureList recipes={data}/>}
         </div>
      );
 }

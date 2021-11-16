@@ -3,24 +3,26 @@ import { useTheme } from "../hooks/useTheme";
 
 import "./AdventureList.css"
 
-const RecipeList = ({recipes}) => {
+const AdventureList = ({adventures}) => {
 
     const { mode } = useTheme
 
     return ( 
         <div className="recipe-list">
-            {recipes.map(recipe => (
-                <div key={recipe.id} className={`card ${mode}`}>
-                    <h3>{recipe.title}</h3>
-                    <p>{recipe.cookingTime} to make</p>
+            {adventures.map(adventure => (
+                <div key={adventure.id} className={`card ${mode}`}>
+                    <h1>{adventure.country}</h1>
+                    <h3>{adventure.location}</h3>
+                    <img src={adventure.image} style={{width: 200}}/>
+                    <p>{adventure.activity}</p>
                     <div>
-                        {recipe.method.substring(0, 100)}...
+                        {adventure.description.substring(0, 100)}...
                     </div>
-                    <Link to={`/feature/${recipe.id}`}>Cook This</Link>
+                    <Link to={`/feature/${adventure.id}`}>Do This</Link>
                 </div>
             ))}
         </div>
      );
 }
  
-export default RecipeList;
+export default AdventureList;
