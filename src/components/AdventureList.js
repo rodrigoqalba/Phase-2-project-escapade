@@ -8,7 +8,7 @@ const AdventureList = ({adventures}) => {
     const { mode } = useTheme
 
     return ( 
-        <div className="recipe-list">
+        <div className="adventure-list">
             {adventures.map(adventure => (
                 <div key={adventure.id} className={`card ${mode}`}>
                     <h1>{adventure.country}</h1>
