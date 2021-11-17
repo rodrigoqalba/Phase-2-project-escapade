@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom'
 import { useFetch } from '../../hooks/useFetch'
 import { useTheme } from '../../hooks/useTheme'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 import "./Feature.css"
 
@@ -13,6 +13,10 @@ const Recipe = () => {
     const url = 'http://localhost:8000/countries/' + id
     const { error, isPending, data: adventure} = useFetch(url)
     const { mode } = useTheme
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
 
     return ( 
         <div className={`feature ${mode}`}>

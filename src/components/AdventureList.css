@@ -15,6 +15,7 @@
 	position: relative;
 	justify-content: center;
 	text-align: center;
+	margin-left: 10px;
 }
 .adventure-list .card:hover {
 	transform: rotate(3deg);
