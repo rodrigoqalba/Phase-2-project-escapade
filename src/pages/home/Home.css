@@ -18,7 +18,7 @@
 		'footer		footer		logo';
 }
 
-.landing .page-title {
+.container .page-title {
 	grid-area: main;
 	color: white;
 	font-size: 2.5cm;
@@ -26,4 +26,17 @@
 	margin-top: 0;
 	justify-content: center;
 	align-content: center;
+	z-index: 2;
+}
+
+.container .sam {
+	grid-area: header;
+	height: 50px;
+	opacity: 60%;
+	justify-self: center;
+	align-self: center;
+}
+
+.sam img {
+	height: 600px;
 }

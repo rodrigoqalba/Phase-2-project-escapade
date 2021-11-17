@@ -2,6 +2,7 @@
 	float: left;
 	padding: 15px;
 	color: white;
+	width: 200px;
 	margin-bottom: -5000px;
 	padding-bottom: 5000px;
 	overflow: none;
@@ -14,4 +15,5 @@
 	padding-inline-end: 10px;
 	height: 40px;
 	padding: 10px;
+	width: 100px;
 }
