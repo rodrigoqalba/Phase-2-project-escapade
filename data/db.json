@@ -30,7 +30,7 @@
       "location": "Foz do Iguaçu",
       "image": "/images/Brazil/DSC08669.jpg",
       "activity": "Iguazu Falls",
-      "description": "Iguazu falls are known to be the largest system of waterfalls in the world; made up of 275 different drops, and with a width of 2,700 meters in diameter (3,000 feet wider than Victoria Falls.  Here you will visit the Brazilian side of the falls since it sits on the border of Brazil and Argentina.  From the Brazilian side, you will get a better wide view of the falls, since 80% of the falls sit on the Argentinian side.  The Brazilian side of the falls offers the better hotel and lodging options, and you can even go on a helicopter tour to get an aerial view of the massive falls.  The entrance fee to the park will cost you $18 and the park is open from 9:00 a.m. to 6:00 p.m."
+      "description": "Iguazu falls are known to be the largest system of waterfalls in the world; made up of 275 different drops, and with a width of 2,700 meters in diameter (3,000 feet wider than Victoria Falls.  Here you will visit the Brazilian side of the falls since it sits on the border.  From the Brazilian side, you will get a better wide view of the falls, since 80% of the falls sit on the Argentinian side.  The Brazilian side of the falls offers the better hotel and lodging options, and you can even go on a helicopter tour to get an aerial view of the massive falls.  The entrance fee to the park will cost you $18 and the park is open from 9:00 a.m. to 6:00 p.m."
     },
     {
       "id": "5",
@@ -62,7 +62,7 @@
       "location": "Cuzco",
       "image": "/images/Peru/DSC07314.jpg",
       "activity": "Walking Tour",
-      "description": "Cuzco is a must see city.  It was once the capital of the Inca Empire which stretched from Colombia to Chile.  The Inca Empire was connected by a system of roads that stretched for almost 25,000 miles, about three times the diameter of the earth, and Cuzco was at the center of it all.  If you are thinking of reaching Machu Picchu, you must first pass through Cuzco.  Take your time to visit the historic Plaza De Armas, the Cusco Cathedral, and the facinatng Inca stonework, especially the 12 angle stone.  You can also take a day tour to visit the famous Rainbow Mountain."
+      "description": "Cuzco is a must see city.  It was once the capital of the Inca Empire which stretched the majority of South America.  The Inca Empire was connected by a system of roads that stretched for almost 25,000 miles, about three times the diameter of the earth, and Cuzco was at the center of it all.  If you are thinking of reaching Machu Picchu, you must first pass through Cuzco.  Take your time to visit the historic Plaza De Armas, the Cusco Cathedral, and the facinatng Inca stonework, especially the 12 angle stone.  You can also take a day tour to visit the famous Rainbow Mountain."
     },
     {
       "id": "9",
@@ -78,7 +78,7 @@
       "location": "Oruro",
       "image": "/images/Bolivia/_DSC4047-1.jpg",
       "activity": "Sajama Volcano",
-      "description": "This extinct Volcano is located in the Sajama National Park near the border of Chile.  This is the highest peak in Bolivia at an elevation of 21,463 feet.  Sajama may be an extinct stratovolcano, but there are many hot springs that surround it.  You can comfortably camp out around Sajama, although the 15,666 elevetation might be a bit uncomfortable if you are not used to high altitudes.  The mix of high alttiude and dry air makes this a perfect location for star gazing, so dip into one of the many hot springs and lay back and enjoy the stellar show of the Milky Way and Andromea Galaxy, shooting stars, and nebulas."
+      "description": "This extinct Volcano is located in the Sajama National Park near the southern border.  This is the highest peak in Bolivia at an elevation of 21,463 feet.  Sajama may be an extinct stratovolcano, but there are many hot springs that surround it.  You can comfortably camp out around Sajama, although the 15,666 elevetation might be a bit uncomfortable if you are not used to high altitudes.  The mix of high alttiude and dry air makes this a perfect location for star gazing, so dip into one of the many hot springs and lay back and enjoy the stellar show of the Milky Way and Andromea Galaxy, shooting stars, and nebulas."
     },
     {
       "id": "11",
@@ -158,7 +158,7 @@
       "location": "Iquique",
       "image": "/images/Chile/DJI_0181.jpg",
       "activity": "Explore The City",
-      "description": "Iquique is a coastal city in northern Chile, to the west of the Atacama Desert. A prosperous saltpeter mining town in the 19th century, today it's a popular holiday destination with a tax-free port area, Pacific beaches and a seafront casino. In its historic district, an iconic 19th-century clock tower stands in Arturo Prat Square, the city's main plaza.  Here you can go to the beach year round, you can eat amazing peruvian food due to the close proximity to Peru, and you can also paraglide down from the mountain to the beach."
+      "description": "Iquique is a coastal city in northern Chile, to the west of the Atacama Desert. A prosperous saltpeter mining town in the 19th century, today it's a popular holiday destination with a tax-free port area, Pacific beaches and a seafront casino. In its historic district, an iconic 19th-century clock tower stands in Arturo Prat Square, the city's main plaza.  Here you can go to the beach year round, you can eat amazing food, and you can also paraglide down from the mountain to the beach."
     },
     {
       "id": "21",
@@ -166,7 +166,7 @@
       "location": "Patagonia",
       "image": "/images/Chile/AdobeStock_349197361.jpeg",
       "activity": "Fitz Roy",
-      "description": "Monte Fitz Roy is a mountain in Patagonia, on the border between Argentina and Chile. It is located in the Southern Patagonian Ice Field, near El Chaltén village and Viedma Lake.  The peak sits at 11,171 feet, and its first ascent was in 1952.  Fitz Roy's original name is Chaltén, which means 'Smoking Mountain'.  This is due to a rare aeolic phenomenon that makes its top always appear as it was surrounded by clouds, which gives the mountain a smoking volcano look."
+      "description": "Monte Fitz Roy is a mountain in Patagonia, on the border. It is located in the Southern Patagonian Ice Field, near El Chaltén village and Viedma Lake.  The peak sits at 11,171 feet, and its first ascent was in 1952.  Fitz Roy's original name is Chaltén, which means 'Smoking Mountain'.  This is due to a rare aeolic phenomenon that makes its top always appear as it was surrounded by clouds, which gives the mountain a smoking volcano look."
     },
     {
       "id": "22",
