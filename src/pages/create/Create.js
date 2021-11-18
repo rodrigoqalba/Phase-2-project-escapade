@@ -17,7 +17,7 @@ const Create = () => {
     
     const handleSubmit = (e) => {
         e.preventDefault()
-        postData({ country, location, image, activity, description })
+        postData({ country, location, image, activity, description})
     }
 
     useEffect(() => {

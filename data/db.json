@@ -2,6 +2,7 @@
   "countries": [
     {
       "id": "1",
+      "liked": false,
       "country": "Brazil",
       "location": "Rio De Janeiro",
       "image": "/images/Brazil/DSC08189.jpg",
@@ -10,6 +11,7 @@
     },
     {
       "id": "2",
+      "liked": false,
       "country": "Brazil",
       "location": "Rio De Janeiro",
       "image": "/images/Brazil/DSC08372 (1).jpg",
@@ -18,6 +20,7 @@
     },
     {
       "id": "3",
+      "liked": false,
       "country": "Brazil",
       "location": "Rio De Janeiro",
       "image": "/images/Brazil/DSC08441.jpg",
@@ -26,6 +29,7 @@
     },
     {
       "id": "4",
+      "liked": false,
       "country": "Brazil",
       "location": "Foz do Iguaçu",
       "image": "/images/Brazil/DSC08669.jpg",
@@ -34,6 +38,7 @@
     },
     {
       "id": "5",
+      "liked": false,
       "country": "Argentina",
       "location": "Misiones",
       "image": "/images/Argentina/DSC08891.jpg",
@@ -42,6 +47,7 @@
     },
     {
       "id": "6",
+      "liked": false,
       "country": "Argentina",
       "location": "Los Glaciares National Park",
       "image": "/images/Argentina/AdobeStock_195792066.jpeg",
@@ -50,6 +56,7 @@
     },
     {
       "id": "7",
+      "liked": false,
       "country": "Argentina",
       "location": "Ushuaia",
       "image": "/images/Argentina/AdobeStock_189484797.jpeg",
@@ -58,6 +65,7 @@
     },
     {
       "id": "8",
+      "liked": false,
       "country": "Peru",
       "location": "Cuzco",
       "image": "/images/Peru/DSC07314.jpg",
@@ -66,6 +74,7 @@
     },
     {
       "id": "9",
+      "liked": false,
       "country": "Peru",
       "location": "Machu Picchu",
       "image": "/images/Peru/DSC07564.jpg",
@@ -74,6 +83,7 @@
     },
     {
       "id": "10",
+      "liked": false,
       "country": "Bolivia",
       "location": "Oruro",
       "image": "/images/Bolivia/_DSC4047-1.jpg",
@@ -82,6 +92,7 @@
     },
     {
       "id": "11",
+      "liked": false,
       "country": "Bolivia",
       "location": "La Paz",
       "image": "/images/Bolivia/AdobeStock_293187414.jpeg",
@@ -90,6 +101,7 @@
     },
     {
       "id": "12",
+      "liked": false,
       "country": "Bolivia",
       "location": "La Paz",
       "image": "/images/Bolivia/DSC04938.jpg",
@@ -98,6 +110,7 @@
     },
     {
       "id": "13",
+      "liked": false,
       "country": "Bolivia",
       "location": "La Paz",
       "image": "/images/Bolivia/DSC06103.jpg",
@@ -106,6 +119,7 @@
     },
     {
       "id": "14",
+      "liked": false,
       "country": "Bolivia",
       "location": "Santa Cruz",
       "image": "/images/Bolivia/DSC07148-1.jpg",
@@ -114,6 +128,7 @@
     },
     {
       "id": "15",
+      "liked": false,
       "country": "Bolivia",
       "location": "Uyuni",
       "image": "/images/Bolivia/DSC01278-1.jpg",
@@ -122,6 +137,7 @@
     },
     {
       "id": "16",
+      "liked": false,
       "country": "Bolivia",
       "location": "Tarija",
       "image": "/images/Bolivia/DSC01151-1.jpg",
@@ -130,6 +146,7 @@
     },
     {
       "id": "17",
+      "liked": false,
       "country": "Colombia",
       "location": "Bogota",
       "image": "/images/Colombia/DSC04231.jpg",
@@ -138,6 +155,7 @@
     },
     {
       "id": "18",
+      "liked": false,
       "country": "Colombia",
       "location": "Bogota",
       "image": "/images/Colombia/DSC05056.jpg",
@@ -146,6 +164,7 @@
     },
     {
       "id": "19",
+      "liked": false,
       "country": "Colombia",
       "location": "Quindío",
       "image": "/images/Colombia/AdobeStock_168513024.jpeg",
@@ -154,6 +173,7 @@
     },
     {
       "id": "20",
+      "liked": false,
       "country": "Chile",
       "location": "Iquique",
       "image": "/images/Chile/DJI_0181.jpg",
@@ -162,6 +182,7 @@
     },
     {
       "id": "21",
+      "liked": false,
       "country": "Chile",
       "location": "Patagonia",
       "image": "/images/Chile/AdobeStock_349197361.jpeg",
@@ -170,6 +191,7 @@
     },
     {
       "id": "22",
+      "liked": false,
       "country": "Chile",
       "location": "Patagonia",
       "image": "/images/Chile/AdobeStock_277543031.jpeg",

@@ -5,9 +5,13 @@ import { useState, useEffect } from 'react'
 
 import "./Feature.css"
 
-const Recipe = () => {
+const Feature = () => {
 
     const [isLiked, setIsLiked] = useState(false)
+
+    const handleLike = () => {
+        setIsLiked((currentLike) => !currentLike)
+    }
 
     const { id } = useParams()
     const url = 'http://localhost:8000/countries/' + id
@@ -27,11 +31,7 @@ const Recipe = () => {
                     <h2 className="page-title">{adventure.location} </h2>
                     <img src={adventure.image} alt={adventure.location} style={{width: 800}}/>
                     <h3>{adventure.activity}</h3>
-                    {isLiked ? (
-                    <button onClick={()=> setIsLiked(!isLiked)} className="emoji-button favorite active">★</button>
-                    ) : (
-                    <button onClick={()=> setIsLiked(!isLiked)} className="emoji-button favorite">☆</button>
-                    )}
+                    <button onClick={handleLike} className="emoji-button favorite active">{isLiked ? '★' : '☆'}</button>
                     <p>{adventure.description}</p>
                 </>
             )}
@@ -39,4 +39,4 @@ const Recipe = () => {
      );
 }
  
-export default Recipe;
+export default Feature;
