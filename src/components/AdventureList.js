@@ -5,10 +5,10 @@ import "./AdventureList.css"
 
 const AdventureList = ({adventures}) => {
 
-    const { mode } = useTheme
+    const { mode, color } = useTheme()
 
     return ( 
-        <div className="adventure-list">
+        <div className={`adventure-list ${mode}`}>
             {adventures.map(adventure => (
                 <div key={adventure.id} className={`card ${mode}`}>
                     <h1>{adventure.country}</h1>
@@ -18,7 +18,7 @@ const AdventureList = ({adventures}) => {
                     <div>
                         {adventure.description.substring(0, 100)}...
                     </div>
-                    <Link to={`/feature/${adventure.id}`}>Do This</Link>
+                    <Link style={{background:color}}to={`/feature/${adventure.id}`}>Do This</Link>
                 </div>
             ))}
         </div>

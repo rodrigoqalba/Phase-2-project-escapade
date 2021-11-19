@@ -5,12 +5,13 @@ import { useState, useEffect } from 'react'
 
 import "./Feature.css"
 
-const Feature = () => {
+const Feature = ({ handleFavorites }) => {
 
     const [isLiked, setIsLiked] = useState(false)
 
-    const handleLike = () => {
+    const handleLike = (e) => {
         setIsLiked((currentLike) => !currentLike)
+        handleFavorites(e.target.value)
     }
 
     const { id } = useParams()
@@ -31,7 +32,7 @@ const Feature = () => {
                     <h2 className="page-title">{adventure.location} </h2>
                     <img src={adventure.image} alt={adventure.location} style={{width: 800}}/>
                     <h3>{adventure.activity}</h3>
-                    <button onClick={handleLike} className="emoji-button favorite active">{isLiked ? '★' : '☆'}</button>
+                    <button value={adventure.activity} onClick={handleLike} className={"emoji-button favorite active"}>{isLiked ? '★' : '☆'}</button>
                     <p>{adventure.description}</p>
                 </>
             )}

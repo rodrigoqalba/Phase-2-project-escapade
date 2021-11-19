@@ -1,0 +1,21 @@
+.favorites ul {
+	padding: 0;
+	list-style-type: none;
+}
+.favorites li {
+	font-size: 0.66em;
+	display: inline-block;
+	list-style-type: none;
+	margin-left: 0;
+}
+
+.favorites button {
+	border: none;
+	background: none;
+	color: white;
+}
+.favorites button:hover {
+	display: inline-block;
+	cursor: pointer;
+	color: red;
+}

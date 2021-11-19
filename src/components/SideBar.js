@@ -4,9 +4,10 @@ import { useHistory } from 'react-router-dom'
 import { useTheme } from '../hooks/useTheme'
 // // styles
 import './SideBar.css'
+import FavoritesList from './FavoritesList'
 
 
-function SideBar() {
+function SideBar({ favorites, handleDelete }) {
   const {color} = useTheme()
   const [country, setCountry] = useState('')
   const history = useHistory()
@@ -19,9 +20,11 @@ function SideBar() {
   const stateChange = (e) => {
     setCountry(e.target.textContent)
   }
+
+  const favsList = favorites.map((fav) => (
+    <FavoritesList key={fav} fav={fav} handleDelete={handleDelete}/>
+  ))
  
-
-
   return (
     <div className="side-bar" style={{ background: color }}>
         <div id='theme' ><ThemeSelector/></div>
@@ -38,6 +41,10 @@ function SideBar() {
             <p onClick={handleClick}onMouseEnter={stateChange}>Colombia</p>
             <br/>
             <p onClick={handleClick} onMouseEnter={stateChange}>Peru</p>
+          </div>
+          <div>
+            <h4>Favorites List:</h4>
+            {favsList}
           </div>
     </div>
   )

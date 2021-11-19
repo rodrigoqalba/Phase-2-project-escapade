@@ -8,6 +8,10 @@
 	overflow: none;
 }
 
+.side-bar p:hover {
+	cursor: pointer;
+}
+
 #theme {
 	background-color: lightgray;
 	border-radius: 10px;

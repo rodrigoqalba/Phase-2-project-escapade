@@ -8,6 +8,7 @@ import Feature from './pages/feature/Feature';
 import NavBar from './components/NavBar';
 import Home from './pages/home/Home';
 import SideBar from './components/SideBar';
+import { useState } from 'react'
 
 //styles
 import './App.css'
@@ -15,13 +16,30 @@ import { useTheme } from './hooks/useTheme';
 
 function App() {
 
+  const [favorites, setFavorites] = useState([])
+
+  const handleFavorites = (newFavorite) => {
+    if ( !favorites.includes(newFavorite)) {
+    const updatedFavs = [...favorites, newFavorite]
+     setFavorites(updatedFavs)
+    } else {
+      return favorites
+    }
+  }
+
+  const handleDelete = (favorite) => {
+    const updatedFavs = favorites.filter(fav => fav !== favorite)
+    return setFavorites(updatedFavs)
+  }
+  console.log(favorites)
+
   const { mode } = useTheme()
 
   return (
     <div className={`App ${mode}`}>
       <BrowserRouter>
         <NavBar />
-        <SideBar/>
+        <SideBar favorites={favorites} handleDelete={handleDelete}/>
         <Switch>
           <Route exact path='/'>
             <Home />
@@ -36,7 +54,7 @@ function App() {
             <Search/>
           </Route>
           <Route path='/feature/:id'>
-            <Feature />
+            <Feature handleFavorites={handleFavorites}/>
           </Route>
         </Switch>
       </BrowserRouter>

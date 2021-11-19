@@ -1,6 +1,7 @@
 import { useState, useEffect} from "react";
 import { useHistory } from "react-router-dom";
 import { useFetch } from "../../hooks/useFetch";
+import { useTheme } from "../../hooks/useTheme";
 
 import "./Create.css"
 
@@ -12,12 +13,13 @@ const Create = () => {
     const [activity, setActivity] = useState('')
     const [description, setDescription] = useState('')
     const history = useHistory()
+    const { color, mode } = useTheme()
 
-    const { postData, data, error } = useFetch('http://localhost:8000/countries', 'POST')
+    const { postData, data } = useFetch('http://localhost:8000/countries', 'POST')
     
     const handleSubmit = (e) => {
         e.preventDefault()
-        postData({ country, location, image, activity, description})
+        postData({country, location, image, activity, description})
     }
 
     useEffect(() => {
@@ -28,7 +30,7 @@ const Create = () => {
     
 
     return ( 
-        <div className="create">
+        <div className={`create ${mode}`}>
             <h2 className="page-title">Add a New Adventure</h2>
 
             <form onSubmit={handleSubmit}>
@@ -74,7 +76,7 @@ const Create = () => {
                     />
                 </label>
 
-                <button className="btn">Submit</button>
+                <button style={{background: color}} className="btn">Submit</button>
 
             </form>
         </div>

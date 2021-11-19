@@ -10,7 +10,6 @@ const Home = () => {
                     <img src={SAM} alt="south america" />
                 </div>
             </div>
-            
         </div>
      );
 }
